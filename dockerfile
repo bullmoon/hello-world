@@ -1,8 +1,8 @@
 # Base image
-FROM httpd
+FROM westerus/tikiwiki-webphp
 
 # work dir
-ENV dstfldr /usr/local/apache2/htdocs/
+ENV dstfldr /var/www/html/
 
 # copy content to workdir
 COPY . $dstfldr
